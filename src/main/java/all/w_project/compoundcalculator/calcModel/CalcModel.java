@@ -1,4 +1,4 @@
-package all.w_project;
+package all.w_project.compoundcalculator.calcModel;
 
 import jakarta.persistence.*;
 
@@ -16,11 +16,9 @@ public class CalcModel {
     private int period;
     private BigDecimal rezult;
 
-    CalcModel() {
-
+    public CalcModel() {
     }
-
-    CalcModel(String id, String tag, BigDecimal principal, BigDecimal rate, int period, BigDecimal rezult) {
+    public CalcModel(String id, String tag, BigDecimal principal, BigDecimal rate, int period, BigDecimal rezult) {
         this.id = id;
         this.tag = tag;
         this.principal = principal;
